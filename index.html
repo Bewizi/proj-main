@@ -3,23 +3,87 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Style -->
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- End of Style -->
     <title>Card Details</title>
   </head>
   <body>
     <form action="" class="form" id="form-input">
       <!-- Cardholder -->
-      <label for="name" class="">Cardholder name </label>
-      <div>
-        <input type="text" name="cardholder" id="cardholder" class="" />
+      <div class="customer-cardname">
+        <label for="name" class="user-name">Cardholder name </label>
+        <div class="userinput">
+          <input
+            type="text"
+            name="cardholder"
+            id="cardholder"
+            class=""
+            placeholder="e.g. Jane Appleseed"
+          />
+        </div>
+        <div id="errorMsgName"></div>
+        <div id="noInput"></div>
       </div>
       <!-- End of Cardholder -->
 
       <!-- Card Number -->
-      <label for="number">Card number</label>
-      <div>
-        <input type="number" name="cardNumber" id="cardnumber" class="" />
+      <div class="customer-cardnumber">
+        <label for="number" class="user-number">Card number</label>
+        <div class="carduserinput">
+          <input
+            type="text"
+            name="cardNumber"
+            id="cardnumber"
+            class=""
+            placeholder=" e.g. 1234 5678 9123 0000"
+          />
+        </div>
+        <div id="noInputMsg"></div>
+        <div id="noInputMessage"></div>
       </div>
       <!--End of Card Number -->
+
+      <div class="flex expdate__cvc">
+        <!-- Expiration Date -->
+        <div class="expirydate">
+          <label for="expirydate" class="expired-date">EXP. DATE (MM/YY)</label>
+          <!-- exp month and year -->
+          <div class="flex epired__month__year">
+            <!-- exp month -->
+            <div>
+              <div class="month-expired">
+                <input
+                  type="number"
+                  name="month"
+                  id="exp-month"
+                  placeholder="MM"
+                />
+              </div>
+              <div id="err_msg_mon"></div>
+              <div id="noInputMessage"></div>
+            </div>
+            <!-- end of exp month -->
+            <!-- exp year -->
+            <div class="year-expired">
+              <input type="number" name="year" id="exp-year" placeholder="YY" />
+            </div>
+            <!-- end of exp year -->
+          </div>
+          <!-- end of exp month and year -->
+        </div>
+        <!-- End of Expiration Date -->
+
+        <!-- cvc -->
+        <div class="cvv">
+          <label for="cvc" class="cvc">CVC</label>
+          <div class="cvc_input">
+            <input type="number" name="cvc" id="" placeholder="e.g. 123" />
+          </div>
+        </div>
+        <!-- end of cvc -->
+      </div>
 
       <!-- confirm btn -->
       <button type="submit" class="btn">Confirm</button>

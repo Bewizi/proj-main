@@ -1,0 +1,60 @@
+.customer-cardname {
+  margin-bottom: 1.5rem;
+}
+
+.customer-cardnumber {
+  margin-bottom: 1.5rem;
+}
+
+.user-name {
+  display: inline-block;
+  margin-bottom: 0.567rem;
+}
+
+.user-number {
+  display: inline-block;
+  margin-bottom: 0.567rem;
+}
+
+.userinput {
+  border: 2px solid hsl(279, 6%, 55%);
+  width: 21.75rem;
+  padding: 0.575rem;
+  border-radius: 5px;
+}
+
+.carduserinput {
+  border: 2px solid hsl(279, 6%, 55%);
+  width: 21.75rem;
+  padding: 0.575rem;
+  border-radius: 5px;
+}
+
+#errorMsgName,
+#noInputMsg,
+#noInput,
+#noInputMessage {
+  color: hsl(0, 100%, 66%);
+  font-size: 0.83rem;
+  margin-top: 0.438rem;
+}
+
+.month-expired,
+.year-expired {
+  border: 2px solid hsl(279, 6%, 55%);
+  padding: 0.575rem;
+  border-radius: 5px;
+  width: 5rem;
+}
+
+.cvc_input {
+  border: 2px solid hsl(279, 6%, 55%);
+  padding: 0.575rem;
+  border-radius: 5px;
+}
+
+.expired-date,
+.cvc {
+  display: inline-block;
+  margin-bottom: 0.567rem;
+}
