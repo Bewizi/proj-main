@@ -19,7 +19,6 @@
             type="text"
             name="cardholder"
             id="cardholder"
-            class=""
             placeholder="e.g. Jane Appleseed"
           />
         </div>
@@ -41,7 +40,9 @@
           />
         </div>
         <div id="noInputMsg"></div>
-        <div id="noInputMessage"></div>
+        <div id="noInput"></div>
+
+        <!-- <div id="noInputMessage"></div> -->
       </div>
       <!--End of Card Number -->
 
@@ -66,11 +67,20 @@
             </div>
             <!-- end of exp month -->
             <!-- exp year -->
-            <div class="year-expired">
-              <input type="number" name="year" id="exp-year" placeholder="YY" />
+            <div>
+              <div class="year-expired">
+                <input
+                  type="number"
+                  name="year"
+                  id="exp-year"
+                  placeholder="YY"
+                />
+              </div>
+              <div id="err_msg_year"></div>
+              <div id="noInputYear"></div>
             </div>
-            <!-- end of exp year -->
           </div>
+          <!-- end of exp year -->
           <!-- end of exp month and year -->
         </div>
         <!-- End of Expiration Date -->

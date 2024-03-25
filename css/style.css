@@ -33,7 +33,10 @@
 #errorMsgName,
 #noInputMsg,
 #noInput,
-#noInputMessage {
+#noInputMessage,
+#err_msg_mon,
+#err_msg_year,
+#noInputYear {
   color: hsl(0, 100%, 66%);
   font-size: 0.83rem;
   margin-top: 0.438rem;
